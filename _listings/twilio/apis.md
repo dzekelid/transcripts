@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio
 x-kinRank: "10"
 x-alexaRank: "9195"
 tags: Transcripts
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/apis.md
 specificationVersion: "0.14"
 apis:
@@ -471,6 +471,85 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidrecordingsrecordingsidtranscriptions-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidrecordingsrecordingsidtranscriptions-get-openapi.md
+- name: Twilio - Delete Transcription
+  x-api-slug: accountsaccountsidtranscriptionstranscriptionsid-delete
+  description: Deletes a transcription from your account.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptionstranscriptionsid-delete-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptionstranscriptionsid-delete-openapi.md
+- name: Twilio - Get Transcription
+  x-api-slug: accountsaccountsidtranscriptionstranscriptionsid-get
+  description: Returns a single Transcription resource representation identified by
+    thengiven {TranscriptionSid}. By default Twilio will respond with the XML metadata
+    for the Transcription. If you append .txt to the end of the Transcription resources
+    URI Twilio will just return you the transcription tex.n
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptionstranscriptionsid-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptionstranscriptionsid-get-openapi.md
+- name: Twilio - Get Transcriptions
+  x-api-slug: accountsaccountsidtranscriptions-get
+  description: Returns a set of Transcription resource representations that includes
+    pagingninformation.n
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptions-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptions-get-openapi.md
+- name: Twilio - GetTranscriptionList
+  x-api-slug: accountsaccountsidtranscriptions-format-get
+  description: GetTranscriptionList
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptions-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptions-format-get-openapi.md
+- name: Twilio - GetTranscription
+  x-api-slug: accountsaccountsidtranscriptionstranscriptionsid-format-get
+  description: GetTranscription
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/143-twilio.jpg
+  humanURL: http://www.twilio.com
+  baseURL: https://api.twilio.com//2010-04-01/
+  tags: Voice, SMS, Voice, MMS API, MMS, API LIfeyclessss, Getting Started Example,
+    Service Level Agreement, Stack Network, Stack, Technology, SaaS, Telecommunications,
+    Enterprise, internet, SMS, Telecommunications, Messages, Messages, Relative Data,
+    Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptionstranscriptionsid-format-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/twilio/accountsaccountsidtranscriptionstranscriptionsid-format-get-openapi.md
 x-common:
 - type: x--net-library
   url: https://www.twilio.com/docs/csharp/install

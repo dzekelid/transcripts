@@ -8,8 +8,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-
 x-kinRank: "7"
 x-alexaRank: "7271"
 tags: Transcripts
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/apis.md
 specificationVersion: "0.14"
 apis:
@@ -180,6 +180,126 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/archiverecordings-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/archiverecordings-get-openapi.md
+- name: GoToAssist Remote Support - Get WebChat Transcript Info
+  x-api-slug: sessionssessionidevents-get
+  description: "Get information about a current or previous web-chat session based
+    upon the sessionID. The session must have been run within an account or company
+    that the authenticated user has access to.\n\n  Response Parameters                    \n
+    \                     \n    field        data type      description    \n    sessionId
+    \       string      The unique ID of this session    \n    startTime        ISO
+    8601 format*      The start time of web-chat session    \n    endTime        ISO
+    8601 format*      The endTime of the session    \n    timeStamp        ISO 8601
+    format*      Time when the event occurred    \n    content        string      Details
+    of the event. It could be a question/answer asked by customer/expert or could
+    indicate joining or ending of session by expert    \n    participantName        string
+    \     Name of the customer or expert    \n                      \n* ISO 8601 format
+    reference\n\nStatus Codes              \n              \n    Staus Code      description
+    \   \n    200 OK      WebChat transcripts info successfully fetched    \n    400
+    Bad Request      An error occurred due to missing required parameters or portal
+    not being created    \n    401 Unauthorized      An authentication parameter was
+    passed, but either it was invalid or the technician is not entitled with a Remote
+    Support seat    \n    403 Forbidden      Access denied. User doesn\u2019t have
+    required roles    \n    404 Not Found      No web-chat transcript found for the
+    specified session-id    \n    405 Method Not Allowed      The method was entered
+    incorrectly (i.e., the technician tried to use POST, PUT etc. instead of GET)
+    \   \n    500 Internal Server Error      An unhandled error occurred"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-logmeininc-com.jpg
+  humanURL: http://www.LogMeInInc.com
+  baseURL: https://api.getgo.com//G2A/rest/v1
+  tags: SaaS, Technology, Enterprise, Voice, Videoconferencing, Audio, Webinars, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/sessionssessionidevents-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/sessionssessionidevents-get-openapi.md
+- name: GoToAssist Remote Support - Transcode Recordings
+  x-api-slug: archiverecordingstranscodereadyfortranscoderecordingids-post
+  description: "This method requests that a list of recordings be transcoded; once
+    the API passes successfully, transcoding will be initiated for each of the recordings
+    in the list. A result of \u201C204\u201D will be returned, regardless of the current
+    state of the recordings (i.e., even if they are already transcoded). No more than
+    500 recordings can be transcoded at once.\n\nNote: Session recording must be enabled
+    on the account in order to use this API method. To enable session recording, log
+    in at https://app.gotoassist.com (link is external) and go to Configure > GoToAssist
+    Settings > Enable Session Recording check box.\n\n  Request Parameters                    \n
+    \                     \n    field        data type      description    \n    recordingIds
+    \       array      A list of RecordingIds for the recordings to be transcoded
+    \   \n                      \n\nStatus Codes                \n                \n
+    \   Staus Code        description    \n    204 No Content        Transcoding initiated
+    \   \n    400 Bad Request        Request may be malformed or property may be missing
+    or invalid    \n    403 Forbidden        Invalid authorization header or invalid
+    recordingIDs    \n    500 Internal Server Error        Unexpected server error"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-logmeininc-com.jpg
+  humanURL: http://www.LogMeInInc.com
+  baseURL: https://api.getgo.com//G2A/rest/v1
+  tags: SaaS, Technology, Enterprise, Voice, Videoconferencing, Audio, Webinars, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/archiverecordingstranscodereadyfortranscoderecordingids-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/archiverecordingstranscodereadyfortranscoderecordingids-post-openapi.md
+- name: GoToAssist Remote Support - Transcode Recordings
+  x-api-slug: archiverecordingstranscodereadyfortranscoderecordingids-post
+  description: "This method requests that a list of recordings be transcoded; once
+    the API passes successfully, transcoding will be initiated for each of the recordings
+    in the list. A result of \u201C204\u201D will be returned, regardless of the current
+    state of the recordings (i.e., even if they are already transcoded). No more than
+    500 recordings can be transcoded at once.\n\nNote: Session recording must be enabled
+    on the account in order to use this API method. To enable session recording, log
+    in at https://app.gotoassist.com (link is external) and go to Configure > GoToAssist
+    Settings > Enable Session Recording check box.\n\n  Request Parameters                    \n
+    \                     \n    field        data type      description    \n    recordingIds
+    \       array      A list of RecordingIds for the recordings to be transcoded
+    \   \n                      \n\nStatus Codes                \n                \n
+    \   Staus Code        description    \n    204 No Content        Transcoding initiated
+    \   \n    400 Bad Request        Request may be malformed or property may be missing
+    or invalid    \n    403 Forbidden        Invalid authorization header or invalid
+    recordingIDs    \n    500 Internal Server Error        Unexpected server error"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-logmeininc-com.jpg
+  humanURL: http://www.LogMeInInc.com
+  baseURL: https://api.getgo.com//G2A/rest/v1
+  tags: SaaS, Technology, Enterprise, Voice, Videoconferencing, Audio, Webinars, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/archiverecordingstranscodereadyfortranscoderecordingids-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/archiverecordingstranscodereadyfortranscoderecordingids-post-openapi.md
+- name: GoToAssist Remote Support - Get WebChat Transcript Info
+  x-api-slug: sessionssessionidevents-get
+  description: "Get information about a current or previous web-chat session based
+    upon the sessionID. The session must have been run within an account or company
+    that the authenticated user has access to.\n\n  Response Parameters                    \n
+    \                     \n    field        data type      description    \n    sessionId
+    \       string      The unique ID of this session    \n    startTime        ISO
+    8601 format*      The start time of web-chat session    \n    endTime        ISO
+    8601 format*      The endTime of the session    \n    timeStamp        ISO 8601
+    format*      Time when the event occurred    \n    content        string      Details
+    of the event. It could be a question/answer asked by customer/expert or could
+    indicate joining or ending of session by expert    \n    participantName        string
+    \     Name of the customer or expert    \n                      \n* ISO 8601 format
+    reference\n\nStatus Codes              \n              \n    Staus Code      description
+    \   \n    200 OK      WebChat transcripts info successfully fetched    \n    400
+    Bad Request      An error occurred due to missing required parameters or portal
+    not being created    \n    401 Unauthorized      An authentication parameter was
+    passed, but either it was invalid or the technician is not entitled with a Remote
+    Support seat    \n    403 Forbidden      Access denied. User doesn\u2019t have
+    required roles    \n    404 Not Found      No web-chat transcript found for the
+    specified session-id    \n    405 Method Not Allowed      The method was entered
+    incorrectly (i.e., the technician tried to use POST, PUT etc. instead of GET)
+    \   \n    500 Internal Server Error      An unhandled error occurred"
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28873-www-logmeininc-com.jpg
+  humanURL: http://www.LogMeInInc.com
+  baseURL: https://api.getgo.com//G2A/rest/v1
+  tags: SaaS, Technology, Enterprise, Voice, Videoconferencing, Audio, Webinars, Relative
+    Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/sessionssessionidevents-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/logmein/sessionssessionidevents-get-openapi.md
 - name: GoToAssist Remote Support - Get WebChat Transcript Info
   x-api-slug: sessionssessionidevents-get
   description: "Get information about a current or previous web-chat session based

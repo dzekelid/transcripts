@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1846-rev.j
 x-kinRank: "8"
 x-alexaRank: "14610"
 tags: Transcripts
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/rev/apis.md
 specificationVersion: "0.14"
 apis: []

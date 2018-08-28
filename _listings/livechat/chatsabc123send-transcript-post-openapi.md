@@ -1,13 +1,13 @@
 ---
 swagger: "2.0"
-x-collection-name: Vinli
+x-collection-name: LiveChat
 x-complete: 0
 info:
-  title: Vinli Get all transactions for this app
-  description: Get all transactions for this app.
+  title: LiveChat Send chat transcript to e-mail
+  description: ""
   version: 1.0.0
-host: events.vin.li
-basePath: /api/v1
+host: api.livechatinc.com
+basePath: /
 schemes:
 - http
 produces:
@@ -15,21 +15,24 @@ produces:
 consumes:
 - application/json
 paths:
-  /transactions:
-    get:
-      summary: Get all transactions for this app
-      description: Get all transactions for this app.
-      operationId: TransactionsGet
-      x-api-path-slug: transactions-get
+  /chats/ABC123/send_transcript:
+    post:
+      summary: Send chat transcript to e-mail
+      description: ""
+      operationId: ChatsABC123SendTranscriptPost
+      x-api-path-slug: chatsabc123send-transcript-post
       parameters:
       - in: header
-        name: Accept
+        name: X-API-Version
       responses:
         200:
           description: OK
       tags:
-      - Transactionsthis
-      - App
+      - Send
+      - Chat
+      - Transcript
+      - To
+      - E-mail
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

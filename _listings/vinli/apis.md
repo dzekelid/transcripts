@@ -8,11 +8,23 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28875-www-
 x-kinRank: "7"
 x-alexaRank: "2170360"
 tags: Transcripts
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/vinli/apis.md
 specificationVersion: "0.14"
 apis:
+- name: Vinli - Get all transactions for this app
+  x-api-slug: transactions-get
+  description: Get all transactions for this app.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28875-www-vin-li.jpg
+  humanURL: http://vinli.com
+  baseURL: https://events.vin.li//api/v1
+  tags: Mobile, Technology, Automobiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/vinli/transactions-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/transcripts/master/_listings/vinli/transactions-get-openapi.md
 - name: Vinli - Get all transactions for this app
   x-api-slug: transactions-get
   description: Get all transactions for this app.
